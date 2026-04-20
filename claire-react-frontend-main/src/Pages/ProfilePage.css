@@ -1,0 +1,129 @@
+.profile-page {
+  min-height: 100vh;
+  padding: 108px 16px 28px;
+  background: linear-gradient(180deg, #fffef8 0%, #f4ead6 100%);
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 920px;
+  background: #fff;
+  border: 1px solid #e6d7bb;
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 16px 38px rgba(105, 78, 29, 0.12);
+}
+
+.profile-eyebrow {
+  color: #95763d;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 700;
+  font-size: 0.75rem;
+  margin-bottom: 10px;
+}
+
+.profile-card h1 {
+  color: #583f10;
+  margin-bottom: 6px;
+  font-size: clamp(1.45rem, 2.6vw, 2rem);
+}
+
+.profile-email,
+.profile-role {
+  color: #7f6942;
+  margin-bottom: 10px;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.profile-grid article {
+  background: #fffaf0;
+  border: 1px solid #ead9b6;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.profile-grid h2 {
+  color: #6d521c;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.profile-grid p {
+  color: #6d6046;
+  line-height: 1.55;
+  font-size: 0.95rem;
+  overflow-wrap: anywhere;
+  margin: 0 0 8px;
+}
+
+.profile-highlight {
+  grid-column: 1 / -1;
+}
+
+.profile-highlight__main {
+  color: #4d370b;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.profile-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.profile-action-btn,
+.profile-empty button {
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #c76868 0%, #9d3d3d 100%);
+  color: #fff;
+  padding: 11px 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.profile-action-btn.is-logout {
+  background: linear-gradient(180deg, #7e5b1a 0%, #5f4310 100%);
+}
+
+.profile-empty {
+  max-width: 520px;
+  text-align: center;
+}
+
+.profile-empty p {
+  margin-top: 8px;
+  color: #6b634f;
+}
+
+@media (max-width: 760px) {
+  .profile-page {
+    padding-top: 96px;
+  }
+
+  .profile-card {
+    border-radius: 18px;
+    padding: 18px 14px;
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-action-btn,
+  .profile-empty button {
+    width: 100%;
+    min-height: 44px;
+  }
+}

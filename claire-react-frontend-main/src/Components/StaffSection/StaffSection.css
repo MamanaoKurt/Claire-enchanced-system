@@ -1,0 +1,70 @@
+
+
+.staff-images img {
+    width: min(100%, 180px);
+}
+
+
+.staff-section {
+    padding: 80px 100px;
+    background-color: #897a42;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.staff-top h1{
+    font-size: clamp(1.8rem, 4.2vw, 3rem);
+    color: white;
+    font-family: "Playfair Display", serif;
+}
+
+.staff-image-container {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.staff-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.staff-images hr {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+@media (max-width: 1100px) {
+    .staff-image-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    .staff-section {
+        padding: 48px 20px;
+        gap: 20px;
+    }
+
+    .staff-image-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+}
+
+@media (max-width: 520px) {
+    .staff-image-container {
+        grid-template-columns: 1fr;
+    }
+}

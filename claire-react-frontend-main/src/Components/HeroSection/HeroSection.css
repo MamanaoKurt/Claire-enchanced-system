@@ -1,0 +1,261 @@
+.Hero {
+  background: #f7f2e9;
+  padding: 40px 0 60px;
+}
+
+.hero-inner {
+  width: min(1200px, calc(100% - 40px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-kicker {
+  margin: 0 0 12px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #9a7a2e;
+  font-weight: 700;
+}
+
+.hero-left h1 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(44px, 6vw, 82px);
+  line-height: 0.95;
+  color: #2d2015;
+}
+
+.hero-subtitle {
+  margin: 22px 0 0;
+  max-width: 560px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #544637;
+}
+
+.left-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.button1,
+.button2 {
+  min-width: 190px;
+  padding: 16px 26px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.button1 {
+  border: 1.5px solid #a88d3d;
+  background: transparent;
+  color: #8a6d27;
+}
+
+.button1:hover {
+  background: #f3e8cf;
+}
+
+.button2 {
+  border: none;
+  background: #ffffff;
+  color: #8a6d27;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+}
+
+.button2:hover {
+  transform: translateY(-1px);
+}
+
+.card {
+  margin-top: 26px;
+  max-width: 540px;
+  background: #fffdfa;
+  border: 1px solid rgba(168, 141, 61, 0.5);
+  border-radius: 24px;
+  padding: 18px 18px 20px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.04);
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.hero__dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #84d252;
+  flex-shrink: 0;
+}
+
+.hero__cardLabel {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #8a6d27;
+}
+
+.card-mid {
+  font-size: 22px;
+  font-weight: 800;
+  color: #2d2015;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.card-bottom {
+  font-size: 15px;
+  color: #6b5b47;
+  line-height: 1.6;
+}
+
+.currently-servicing-list {
+  max-height: 180px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.currently-servicing-item + .currently-servicing-item {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(166, 122, 37, 0.18);
+}
+
+.currently-servicing-summary {
+  margin-top: 14px;
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image-frame {
+  width: 100%;
+  max-width: 560px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 640px;
+  object-fit: cover;
+  display: block;
+  border-radius: 120px 120px 36px 36px;
+  border: 1px solid rgba(168, 141, 61, 0.5);
+}
+
+.contact-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(24, 18, 10, 0.42);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.contact-modal {
+  width: min(100%, 520px);
+  background: #fffdfa;
+  border-radius: 28px;
+  padding: 28px 24px;
+  text-align: center;
+  border: 1px solid rgba(168, 141, 61, 0.35);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.16);
+}
+
+.contact-modal__eyebrow {
+  margin: 0 0 8px;
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #9a7a2e;
+  font-weight: 700;
+}
+
+.contact-modal h3 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+  color: #2d2015;
+}
+
+.contact-modal__text {
+  margin: 12px 0 20px;
+  color: #645646;
+  line-height: 1.6;
+}
+
+.contact-modal__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-modal__button {
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: 18px;
+  border: 1.5px solid #a88d3d;
+  background: #fff;
+  color: #8a6d27;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contact-modal__button:hover {
+  background: #f7edd5;
+}
+
+.contact-modal__close {
+  margin-top: 18px;
+  border: none;
+  background: transparent;
+  color: #8a6d27;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 960px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-left {
+    order: 2;
+  }
+
+  .hero-right {
+    order: 1;
+  }
+
+  .hero-image {
+    height: 460px;
+    border-radius: 52px 52px 28px 28px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}

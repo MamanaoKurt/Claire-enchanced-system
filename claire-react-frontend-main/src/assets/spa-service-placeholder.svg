@@ -1,0 +1,32 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="64" y1="64" x2="448" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2D9D3"/>
+      <stop offset="1" stop-color="#E7C3BA"/>
+    </linearGradient>
+    <linearGradient id="petal" x1="160" y1="170" x2="352" y2="332" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A87F73"/>
+      <stop offset="1" stop-color="#7D5D55"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="24" y="24" width="464" height="464" rx="96" fill="url(#bg)"/>
+
+  <g opacity="0.22">
+    <circle cx="404" cy="130" r="56" fill="#B98E82"/>
+    <circle cx="112" cy="404" r="70" fill="#CBA79D"/>
+    <path d="M426 330C384 298 354 298 322 326" stroke="#9E7368" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <g>
+    <path d="M256 334C256 284 232 252 188 236C190 290 216 324 256 334Z" fill="url(#petal)"/>
+    <path d="M256 334C256 284 280 252 324 236C322 290 296 324 256 334Z" fill="url(#petal)"/>
+    <path d="M256 330C256 270 222 230 168 210C172 276 204 318 256 330Z" fill="#8C675E"/>
+    <path d="M256 330C256 270 290 230 344 210C340 276 308 318 256 330Z" fill="#8C675E"/>
+    <path d="M256 322C272 292 300 270 336 258" stroke="#6E4E47" stroke-width="8" stroke-linecap="round"/>
+    <path d="M256 322C240 292 212 270 176 258" stroke="#6E4E47" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="256" cy="338" r="10" fill="#6E4E47"/>
+  </g>
+
+  <text x="256" y="420" text-anchor="middle" fill="#6E4E47" font-size="34" font-family="Arial, sans-serif" font-weight="700" letter-spacing="4">SPA SERVICE</text>
+</svg>

@@ -1,0 +1,150 @@
+.auth-page {
+  min-height: 100vh;
+  padding: 108px 16px 28px;
+  background: linear-gradient(180deg, #fff9ef 0%, #f7ecda 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  border: 1px solid #e7d9bf;
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 16px 40px rgba(130, 96, 27, 0.12);
+}
+
+.auth-eyebrow {
+  color: #9b7b39;
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.auth-card h1 {
+  color: #5d4513;
+  margin-bottom: 8px;
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
+}
+
+.auth-subtext {
+  color: #7d6a45;
+  margin-bottom: 20px;
+  line-height: 1.45;
+}
+
+.auth-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.auth-tabs button {
+  border: 1px solid #d6be86;
+  background: #fff8ea;
+  color: #7a5a1a;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-tabs button.active {
+  background: linear-gradient(180deg, #d4b06a 0%, #a97e35 100%);
+  color: #fff;
+  border-color: #a37a34;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auth-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #6d5520;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.auth-form input {
+  border: 1px solid #dbc79d;
+  border-radius: 12px;
+  padding: 11px 12px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.auth-form input:focus {
+  border-color: #b58a3b;
+  box-shadow: 0 0 0 3px rgba(181, 138, 59, 0.15);
+}
+
+.auth-error {
+  color: #b33a3a;
+  font-size: 0.88rem;
+  margin-top: 2px;
+}
+
+.auth-submit {
+  margin-top: 4px;
+  border: none;
+  border-radius: 14px;
+  padding: 12px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  background: linear-gradient(180deg, #c89f55 0%, #946d2d 100%);
+}
+
+.auth-submit:disabled {
+  opacity: 0.72;
+  cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+  .auth-page {
+    align-items: flex-start;
+  }
+
+  .auth-card {
+    margin-top: 8px;
+    border-radius: 18px;
+    padding: 18px 14px;
+  }
+
+  .auth-eyebrow {
+    margin-bottom: 8px;
+    letter-spacing: 0.12em;
+  }
+
+  .auth-subtext {
+    margin-bottom: 16px;
+    font-size: 0.92rem;
+  }
+
+  .auth-tabs {
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .auth-tabs button,
+  .auth-form input,
+  .auth-submit {
+    min-height: 44px;
+  }
+
+  .auth-form label {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,489 @@
+.book-layout {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 42px 28px 70px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+.book-main {
+  min-width: 0;
+}
+
+.book-step-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.book-step-tab {
+  border: 1px solid #ccb98a;
+  background: #f6f1e6;
+  color: #7d6324;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.book-step-tab span {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #eadbb6;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.book-step-tab.is-active {
+  background: #8a7030;
+  color: #fff;
+  border-color: #8a7030;
+}
+
+.book-step-tab.is-active span {
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+}
+
+.book-card {
+  background: #fff;
+  border: 1px solid #e0d3b2;
+  border-radius: 28px;
+  padding: 26px;
+  box-shadow: 0 12px 30px rgba(137, 122, 66, 0.08);
+}
+
+.book-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 22px;
+}
+
+.book-eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.82rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #9d7b2b;
+  font-weight: 700;
+}
+
+.book-card-header h2,
+.book-summary-card h3,
+.book-review-block h3,
+.book-category-block h3 {
+  margin: 0;
+  color: #6c5213;
+}
+
+.book-subcopy {
+  margin: 10px 0 0;
+  color: #655b45;
+}
+
+.book-party-size {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 140px;
+}
+
+.book-party-size span,
+.book-form-grid label span,
+.book-textarea span,
+.book-slot-section h4,
+.book-day-summary h4 {
+  color: #8a6b20;
+  font-weight: 600;
+}
+
+.book-party-size select,
+.book-form-grid input,
+.book-form-grid select,
+.book-textarea textarea {
+  border: 1px solid #d5c396;
+  border-radius: 14px;
+  padding: 14px 16px;
+  font-size: 1rem;
+  outline: none;
+  background: #fffefb;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.book-guest-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.book-guest-tab {
+  border: 1px solid #d7c79e;
+  background: #faf6ee;
+  border-radius: 14px;
+  padding: 12px 16px;
+  cursor: pointer;
+  color: #6b5a2f;
+  font-weight: 600;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.book-guest-tab span {
+  background: #eadab2;
+  border-radius: 999px;
+  min-width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.82rem;
+}
+
+.book-guest-tab.is-active {
+  border-color: #8a7030;
+  background: #f5ead1;
+}
+
+.book-category-block + .book-category-block {
+  margin-top: 26px;
+}
+
+.book-category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.book-schedule-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 24px;
+}
+
+.book-calendar-card,
+.book-details-card {
+  border: 1px solid #eadfca;
+  border-radius: 24px;
+  padding: 20px;
+  background: #fffdf8;
+}
+
+.book-calendar-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.book-calendar-head h3 {
+  margin: 0;
+  color: #6c5213;
+}
+
+.book-calendar-head button {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid #d6c189;
+  background: #fff;
+  color: #8a7030;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.book-week-row {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.book-week-row span {
+  text-align: center;
+  color: #9d7b2b;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.book-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.book-calendar-empty {
+  min-height: 88px;
+}
+
+.book-calendar-day {
+  min-height: 88px;
+  border-radius: 18px;
+  border: 1px solid #e0d3b2;
+  background: #fff;
+  cursor: pointer;
+  padding: 10px 8px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-calendar-day strong {
+  font-size: 1rem;
+  color: #6c5213;
+}
+
+.book-calendar-day small {
+  font-size: 0.72rem;
+  line-height: 1.2;
+}
+
+.book-calendar-day.status-available {
+  background: #fff;
+}
+
+.book-calendar-day.status-partially_booked {
+  background: #fff7e7;
+  border-color: #e0c47f;
+}
+
+.book-calendar-day.status-fully_booked {
+  background: #f8ecec;
+  border-color: #e3b1b1;
+}
+
+.book-calendar-day.is-selected {
+  border: 2px solid #8a7030;
+  box-shadow: 0 0 0 3px rgba(138, 112, 48, 0.1);
+}
+
+.book-calendar-day:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.book-legend {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+  color: #6d6148;
+  font-size: 0.9rem;
+}
+
+.legend {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.legend.available {
+  background: #fff;
+  border: 1px solid #ccb98a;
+}
+
+.legend.partial {
+  background: #fff0c7;
+}
+
+.legend.full {
+  background: #efc7c7;
+}
+
+.book-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.book-form-grid label,
+.book-textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.book-day-summary {
+  margin-top: 18px;
+  padding: 16px;
+  border-radius: 18px;
+  background: #f8f3e8;
+  color: #5e533b;
+}
+
+.book-slot-section {
+  margin-top: 20px;
+}
+
+.book-slot-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.book-slot-btn {
+  border: 1px solid #d3be8b;
+  background: #fff;
+  color: #6b5726;
+  border-radius: 999px;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.book-slot-btn:disabled {
+  background: #f0efeb;
+  color: #a59b87;
+  cursor: not-allowed;
+}
+
+.book-slot-btn.is-selected {
+  background: #8a7030;
+  color: #fff;
+  border-color: #8a7030;
+}
+
+.book-textarea {
+  margin-top: 20px;
+}
+
+.book-textarea textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.book-review-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.book-review-block {
+  border: 1px solid #eadfca;
+  background: #fffdf8;
+  border-radius: 20px;
+  padding: 18px;
+}
+
+.book-review-services {
+  grid-column: 1 / -1;
+}
+
+.book-review-guest + .book-review-guest {
+  margin-top: 16px;
+}
+
+.book-action-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 22px;
+  flex-wrap: wrap;
+}
+
+.book-primary-btn,
+.book-secondary-btn {
+  border-radius: 999px;
+  padding: 14px 22px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.98rem;
+}
+
+.book-primary-btn {
+  background: #8a7030;
+  color: #fff;
+  border: none;
+}
+
+.book-secondary-btn {
+  background: transparent;
+  color: #8a7030;
+  border: 1px solid #ccb98a;
+}
+
+.book-sidebar {
+  position: sticky;
+  top: 100px;
+  align-self: start;
+}
+
+.book-summary-card {
+  background: #f7f3ea;
+  border: 1px solid #e0d3b2;
+  border-radius: 28px;
+  padding: 24px;
+  box-shadow: 0 12px 24px rgba(137, 122, 66, 0.06);
+}
+
+.book-summary-copy {
+  color: #655b45;
+  line-height: 1.5;
+}
+
+.book-summary-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e6dbc2;
+}
+
+.book-summary-line:last-child {
+  border-bottom: none;
+}
+
+.book-error {
+  color: #c34646;
+  margin-top: 8px;
+  display: block;
+}
+
+.book-message {
+  margin-top: 16px;
+  font-weight: 600;
+}
+
+.book-message.is-success {
+  color: #2c7a3f;
+}
+
+.book-message.is-error {
+  color: #c34646;
+}
+
+@media (max-width: 1100px) {
+  .book-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .book-sidebar {
+    position: static;
+  }
+
+  .book-schedule-grid,
+  .book-review-grid,
+  .book-form-grid,
+  .book-category-grid {
+    grid-template-columns: 1fr;
+  }
+}
