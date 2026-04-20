@@ -1,11 +1,15 @@
+# React
 node_modules/
-vendor/
-.env
-*.zip
 dist/
 build/
-public/build/
+
+# Laravel
+vendor/
+.env
 storage/logs/
 bootstrap/cache/*.php
+
+# General
+*.zip
 .DS_Store
 Thumbs.db
