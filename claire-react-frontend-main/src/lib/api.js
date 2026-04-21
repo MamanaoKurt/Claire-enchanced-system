@@ -1,9 +1,10 @@
 const rawApiUrl = import.meta.env.VITE_API_URL?.trim()
 
-const API_BASE_URL =
-  rawApiUrl && rawApiUrl.length > 0
-    ? rawApiUrl.replace(/\/$/, '')
-    : 'http://127.0.0.1:8000'
+const normalizedApiUrl = rawApiUrl
+  ? rawApiUrl.replace(/\/$/, '').replace(/\/api$/, '')
+  : ''
+
+const API_BASE_URL = normalizedApiUrl || 'http://127.0.0.1:8000'
 
 const authHeaders = (extra = {}) => ({
   Accept: 'application/json',
@@ -42,6 +43,7 @@ const request = async (path, options = {}) => {
 
   try {
     const contentType = response.headers.get('content-type') || ''
+
     if (contentType.includes('application/json')) {
       data = await response.json()
     } else {
