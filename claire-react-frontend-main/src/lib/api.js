@@ -4,7 +4,8 @@ const normalizedApiUrl = rawApiUrl
   ? rawApiUrl.replace(/\/$/, '').replace(/\/api$/, '')
   : ''
 
-const API_BASE_URL = normalizedApiUrl || 'http://127.0.0.1:8000'
+const API_BASE_URL =
+  normalizedApiUrl || 'https://claire-laravel-backend-main-kibskh.free.laravel.cloud'
 
 const authHeaders = (extra = {}) => ({
   Accept: 'application/json',
